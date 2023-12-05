@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Popup Modal</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- onclick is alternative to addEventListener('click', ...) of JS -->
+      <button class="openPopupBtn" onclick="openPopup()">Open Popup</button>
+
+      <div class="popup">
+        <h1>Scheduled Maintenance</h1>
+        <p>
+          Dear visitors,<br />
+          Our website will undergo scheduled maintenance on 14th August 2023,
+          from 2:00 AM to 4:00 AM (PST). During this period, the website may
+          experience temporary unavailability. <br />
+          We apologize for any inconvenience and appreciate your understanding
+        </p>
+        <button type="button" class="closePopup" onclick="closePopup()">
+          Close
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

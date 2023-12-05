@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* container
+      form-box
+        header
+          h1
+        form
+          Name
+          Email
+          password
+
+          a//Forgot Password?
+
+          Login
+*/
+
+.container {
+    background: linear-gradient(to right bottom, #ebf4f5, #b5c6e0);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    background-color: #ffffff;
+    width: 50%;
+    max-width: 400px;
+    padding: 20px 28px;
+    border-radius: 8px;
+
+    /* margin for both left and right */
+    margin-inline: 20px;
+
+}
+
+.form-box header h1 {
+    text-align: center;
+    color: #5851e3;
+}
+
+.form-box form {
+    /* margin for both top and bottom, margin-block depends on language and is top/bottom for english */
+    margin-block: 30px;
+}
+
+input {
+    width: 100%;
+    padding: 18px 16px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #a3a3a331;
+    margin: 12px 0;
+}
+
+input[type="text"] {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #767676;
+    font-size: 14px;
+}
+
+
+input[type="button"] {
+    margin-block: 24px;
+    background-color: #5851e3;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+input[type="button"]:hover {
+    background-color: #10449a;
+}
+
+.or {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links a img {
+    max-height: 40px;
+    margin-inline: 10px;
+}
+
+.signup {
+    text-align: center;
+    margin-block: 20px;
+}
+
+.signup a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #10449a;
+}
+
+.signup a:hover {
+    color: #10449a;
+    text-decoration: underline 2px;
+    text-underline-offset: 3.5px;
+}
+
+@media screen and (max-width:570px) and (min-width=400px) {
+    .form-box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:399px) {
+    .links a img {
+        max-height: 30px;
+        margin-inline: 5px;
+    }
+    a {
+        font-size: 12px;
+    }
+    input[type="button"] {
+        font-size: 18px;
+    }
+}

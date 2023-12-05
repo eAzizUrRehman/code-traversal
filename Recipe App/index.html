@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Recipe App</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1>Recipe App</h1>
+        <form>
+          <input
+            type="text"
+            class="search-box"
+            placeholder="Search for recipe..."
+          />
+          <button type="submit" class="search-btn">Search</button>
+        </form>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="recipe-container">
+          <h2>Search for your favourite recipes...</h2>
+        </div>
+        <div class="recipe-popup">
+          <button type="button" class="recipe-popup-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="recipe-content"></div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/6d969b50a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
