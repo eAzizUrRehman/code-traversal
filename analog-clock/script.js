@@ -1,23 +1,23 @@
-let hr = document.getElementById('hour');
-let min = document.getElementById('min');
-let sec = document.getElementById('sec');
+let hr = document.getElementById('hour')
+let min = document.getElementById('min')
+let sec = document.getElementById('sec')
 
 function displayTime() {
-    let date = new Date(); // getting today date, time, all in one
+  let date = new Date() // getting today date, time, all in one
 
-    // extracting hours, minutes, seconds from date
-    let h = date.getHours();
-    let m = date.getMinutes();
-    let s = date.getSeconds();
+  // extracting hours, minutes, seconds from date
+  let h = date.getHours()
+  let m = date.getMinutes()
+  let s = date.getSeconds()
 
-    let hRotation = 30 * h + m / 2;
-    let mRotation = 6 * m;
-    let sRotation = 6 * s;
+  let hRotation = 30 * h + m / 2
+  let mRotation = 6 * m
+  let sRotation = 6 * s
 
-    // now rotating hands
-    hr.style.transform = `rotate(${hRotation}deg)`;
-    min.style.transform = `rotate(${mRotation}deg)`;
-    sec.style.transform = `rotate(${sRotation}deg)`;
+  // now rotating hands
+  hr.style.transform = `rotate(${hRotation}deg)`
+  min.style.transform = `rotate(${mRotation}deg)`
+  sec.style.transform = `rotate(${sRotation}deg)`
 }
 
 setInterval(displayTime, 1000) // 1000ms = 1s

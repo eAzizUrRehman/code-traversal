@@ -1,156 +1,153 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: sans-serif;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
 }
 
 .container {
-    width: 400px;
-    height: min-content;
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 28px;
+  width: 400px;
+  height: min-content;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 28px;
 }
 
 .search-box {
-    width: 100%;
-    height: min-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+  width: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .search-box input {
-    color: #000000;
-    width: 84%;
-    font-size: 20px;
-    text-transform: capitalize;
-    background-color: #e6f5fb;
-    padding: 12px 16px;
-    border-radius: 14px;
+  color: #000000;
+  width: 84%;
+  font-size: 20px;
+  text-transform: capitalize;
+  background-color: #e6f5fb;
+  padding: 12px 16px;
+  border-radius: 14px;
 }
 
 .search-box input::placeholder {
-    color: #000000;
+  color: #000000;
 }
 
 .search-box button {
-    width: 46px;
-    height: 46px;
-    background-color: #e6f5fb;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 20px;
+  width: 46px;
+  height: 46px;
+  background-color: #e6f5fb;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 .search-box button:hover {
-    background-color: #ababab;
-    color: #ffffff;
+  background-color: #ababab;
+  color: #ffffff;
 }
 
 .weather-body {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-block: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 20px;
 }
 
 .weather-body img {
-    width: 60%;
+  width: 60%;
 }
 
 .weather-box {
-    margin-block: 20px;
-    text-align: center;
+  margin-block: 20px;
+  text-align: center;
 }
 
 .weather-box .temperature {
-    font-size: 40px;
-    font-weight: 800;
-    position: relative;
-    display: inline;
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+  display: inline;
 }
 
 .weather-box span {
-    display: inline-block;
+  display: inline-block;
 
-    /* to show °C close to digit */
-    position: absolute;
+  /* to show °C close to digit */
+  position: absolute;
 }
 
 .weather-box span sup {
-    font-size: 22px;
-    font-weight: 600;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .weather-box .description {
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: capitalize;
-
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 .weather-details {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 .humidity,
 .wind {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .humidity {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .wind {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .humidity .material-symbols-outlined,
 .wind .material-symbols-outlined {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .weather-details .text {
-    margin-left: 10px;
-    font-size: 16px;
+  margin-left: 10px;
+  font-size: 16px;
 }
 
 #wind-speed,
 #humidity {
-    font-size: 20px;
-    font-weight: 700;
-
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .location-not-found {
-    margin-top: 20px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  margin-top: 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .location-not-found h1 {
-    font-size: 20px;
-    color: #6b6b6b;
-    margin-block-end: 15px;
+  font-size: 20px;
+  color: #6b6b6b;
+  margin-block-end: 15px;
 }

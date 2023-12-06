@@ -1,38 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Analog Clock</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Analog Clock</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <body>
+    <div class="container">
+      <div class="clock">
+        <div
+          style="--clr: #ff3d58; --height: 74px; --width: 4px"
+          id="hour"
+          class="hand"
+        >
+          <i></i>
+        </div>
+        <div
+          style="--clr: #00a6ff; --height: 84px; --width: 3.5px"
+          id="min"
+          class="hand"
+        >
+          <i></i>
+        </div>
+        <div
+          style="--clr: #ffffff; --height: 94px; --width: 3px"
+          id="sec"
+          class="hand"
+        >
+          <i></i>
+        </div>
 
-<body>
-
-  <div class="container">
-    <div class="clock">
-      <div style="--clr:#ff3d58; --height:74px; --width:4px" id="hour" class= "hand"><i></i></div>
-      <div style="--clr:#00a6ff; --height:84px; --width:3.5px" id="min" class= "hand"><i></i></div>
-      <div style="--clr:#ffffff; --height:94px; --width:3px" id="sec" class= "hand"><i></i></div>
-
-      <span style="--i:1"> <b>1</b></span>
-      <span style="--i:2"> <b>2</b></span>
-      <span style="--i:3"> <b>3</b></span>
-      <span style="--i:4"> <b>4</b></span>
-      <span style="--i:5"> <b>5</b></span>
-      <span style="--i:6"> <b>6</b></span>
-      <span style="--i:7"> <b>7</b></span>
-      <span style="--i:8"> <b>8</b></span>
-      <span style="--i:9"> <b>9</b></span>
-      <span style="--i:10"> <b>10</b></span>
-      <span style="--i:11"> <b>11</b></span>
-      <span style="--i:12"> <b>12</b></span>
-      <!-- --clr & --i used above are variables -->
-
+        <span style="--i: 1"><strong> 1</strong> </span>
+        <span style="--i: 2"><strong> 2</strong> </span>
+        <span style="--i: 3"><strong> 3</strong> </span>
+        <span style="--i: 4"><strong> 4</strong> </span>
+        <span style="--i: 5"><strong> 5</strong> </span>
+        <span style="--i: 6"><strong> 6</strong> </span>
+        <span style="--i: 7"><strong> 7</strong> </span>
+        <span style="--i: 8"><strong> 8</strong> </span>
+        <span style="--i: 9"><strong> 9</strong> </span>
+        <span style="--i: 10"> <strong>10 </strong></span>
+        <span style="--i: 11"> <strong>11 </strong></span>
+        <span style="--i: 12"> <strong>12 </strong></span>
+        <!-- --clr & --i used above are variables -->
+      </div>
     </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
